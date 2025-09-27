@@ -1,0 +1,29 @@
+#Program T3S3;
+Start Variable Integer32_t A1A1, B1B1, C1Y1, C2Y2, X1V1;
+Get (A1A1);
+Get (B1B1);
+
+A1A1 :> C1CY1;
+If C1Y1 < B1B1 + 1 {
+ Repeat
+  Put (C1Y1 Mul C1Y1);
+ C1Y1 + 1 :> C1Y1;
+ Until C1Y1 < B1B1 + 1;
+}
+
+0 :> X1V1;
+1 :> C1Y1;
+If C1Y1 < A1A1 + 1 {
+ Repeat 
+  1 :> C2Y2;
+  If C2Y2 < B1B1 + 1{
+  Repeat 
+   X1V1 + 1 :> X1V1;
+  C2Y2 + 1 :> C2Y2;
+  Until C2Y2 < B1B1 +1 
+  }
+C1Y1 +1 :> C1Y1;
+ Until C1Y1 < A1A1 + 1;
+}
+Put (X1V1);
+End
