@@ -1,4 +1,4 @@
-#Program T1S1;
+#Program T2S2;
 Start Variable Integer32_t A1A1, B1B1, C1C1, M1A1;
 Get (A1A1);
 Get (B1B1);
