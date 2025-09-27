@@ -12,5 +12,5 @@ Put (A1A1 Mod B1B1);
 (A1A1 - B1B1) Mul 10 + (A1A1 + B1B1) Div 10 :> X1X1;
 X1X1 + X1X1 Mod 10 :> Y1Y1;
 PUT (X1X1);
-PUT(Y1Y1):
+PUT(Y1Y1);
 End
